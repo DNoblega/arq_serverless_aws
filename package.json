@@ -1,0 +1,29 @@
+{
+  "name": "<{{proyect.name}}>",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "serverless offline",
+    "dev:event": "serverless invoke local --function <<proyect.dev.name> --path events/event.json"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/node": "^20.10.4",
+    "esbuild": "^0.19.8",
+    "serverless": "^3.38.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-esbuild": "^1.50.0",
+    "serverless-offline": "^13.3.0",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^9.3.2",
+    "reflect-metadata": "^0.1.14",
+    "sendgrid": "^5.2.3",
+    "typeorm": "^0.3.17"
+  }
+}
