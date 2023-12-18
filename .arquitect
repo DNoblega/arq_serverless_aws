@@ -1,0 +1,11 @@
+{
+    "proyect.name": "TEST",
+    "proyect.description": "",
+    "proyect.dev.name": "TESTdev",
+    "proyect.dev.db.host" : "labdev",
+    "proyect.dev.db.port" : "1333",
+    "proyect.dev.db.username" : "mundete",
+    "proyect.dev.db.password" : "mundo2",
+    "proyect.dev.db.database" : "mundo",
+    "proyect.prod.name": "TESTmaster"
+}
