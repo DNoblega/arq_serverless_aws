@@ -4,7 +4,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "serverless offline",
-    "dev:event": "serverless invoke local --function <<proyect.dev.name> --path events/event.json"
+    "dev:event": "serverless invoke local --function <{{proyect.dev.name}}> --path events/event.json"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.130",
