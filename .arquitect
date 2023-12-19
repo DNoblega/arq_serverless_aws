@@ -1,6 +1,6 @@
 {
     "proyect.name": "TEST",
-    "proyect.description": "",
+    "proyect.description": "descripcion de prueba",
     "proyect.dev.name": "TESTdev",
     "proyect.dev.db.host" : "labdev",
     "proyect.dev.db.port" : "1333",

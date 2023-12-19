@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { initializeDatabase } from "./dataBase/db";
 import { validateDB } from "./dataBase/connection";
+import mainRoute  from "./routes/main.route";
 
 
 class Server {
