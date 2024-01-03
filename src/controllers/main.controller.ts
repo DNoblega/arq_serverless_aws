@@ -1,6 +1,10 @@
 import { request, response } from "express";
+export class MainController {
+  
+  constructor(){
 
-export const mainController = async (req = request, res = response) => {
+  }
+  public async helloword(req = request, res = response){
     try {
       res.status(200).json({msg: "<{{proyect.description}}>"});
     } catch (error) {
@@ -9,3 +13,4 @@ export const mainController = async (req = request, res = response) => {
     }
   };
   
+}

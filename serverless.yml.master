@@ -10,11 +10,6 @@ functions:
     name: <{{proyect.prod.name}}>
     events:
       - httpApi: '*'
-  <{{proyect.dev.name}}>:
-    handler: handler.lambdaHandler
-    name: <{{proyect.dev.name}}>
-    events:
-      - httpApi: '*'
 custom:
   esbuild:
     bundle: true

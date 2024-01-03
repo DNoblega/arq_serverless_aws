@@ -16,8 +16,10 @@ jobs:
         node-version: 18
     - name: Install dependencies
       run: npm ci
+    - name: Prepare Serverless config
+      run: cp serverless.yml.${{ github.ref == 'refs/heads/master' && 'master' || 'dev' }} serverless.yml
     - name: Deploy
-      run: npx serverless deploy --stage $STAGE -f <{{proyect.name}}>$STAGE
+      run: npx serverless deploy --stage $STAGE
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
